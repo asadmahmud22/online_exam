@@ -1,0 +1,341 @@
+/* Reset Default Styles */
+body, h1, h2, h3, p, ul, ol, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: linear-gradient(135deg, #f8b6d2 0%, #ffe6f2 100%);
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff88b0;
+    color: white;
+    padding: 15px 1%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-radius: 10px;
+    height: 50px;
+    position: fixed;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffc0d3;
+}
+
+/* Main Container */
+.container {
+    margin-top: 80px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555555;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555555;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #ff88b0;
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background-color: #ff88b0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff99bf;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+table th {
+    background-color: #ff88b0;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ffe6f2;
+}
+
+.hasil-ujian {
+    background: linear-gradient(to right, #f9a8d4, #fcd5ce);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.hasil-ujian h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hasil-ujian p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hasil-ujian a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hasil-ujian a:hover {
+    background-color: #ff2e63;
+}
+
+/* Messages */
+.error {
+    color: #ff6b6b;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.success {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+/* exam */
+/* Heading */
+h1,
+p {
+  text-align: center;
+  color: #ff88b0;
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form Container */
+form {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Question Block */
+.question {
+  border-bottom: 1px solid #ff0000;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Labels and Radio Buttons */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Buttons */
+.button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff88b0;
+  /* color: white; */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button[type="submit"]:hover {
+  background-color: #ff99bf;
+}
+
+/* Back to Dashboard Link */
+a {
+  display: inline-block;
+  margin: 20px 0;
+  color: #ff88b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    form label, form input, form button {
+        font-size: 14px;
+    }
+}
